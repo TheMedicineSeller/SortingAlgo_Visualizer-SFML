@@ -1,0 +1,11 @@
+# Dynamic linking libraries which aren't used
+lib/*.dll
+
+.vscode/
+
+# Build generated files
+Build/CMakeFiles/
+Build/.ninja_deps
+Build/.ninja_log
+Build/cmake_install.cmake
+Build/CMakeCache.txt

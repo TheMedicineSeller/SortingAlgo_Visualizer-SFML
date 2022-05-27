@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.22)
+
+project(SortVisualizer)
+
+include_directories(include)
+
+
+set(SFML_DIR "lib/cmake/SFML")
+
+set(SFML_STATIC_LIBRARIES TRUE)
+find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
+
+add_executable(SortVisualizer main.cpp)
+
+# Make sure to link openal32.dll regardless of static/dynamic linking if using audio
+
+target_link_libraries(SortVisualizer 
+sfml-graphics
+)
