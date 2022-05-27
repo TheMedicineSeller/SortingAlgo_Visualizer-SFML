@@ -1,6 +1,9 @@
 # Dynamic linking libraries which aren't used
 lib/*.dll
 
+# Unused debug mode libraries
+lib/*-d.a
+
 .vscode/
 
 # Build generated files
